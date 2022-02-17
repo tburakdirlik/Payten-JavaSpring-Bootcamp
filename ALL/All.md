@@ -895,7 +895,7 @@ Burdan alıntıdır > [-->]https://medium.com/bilişim-hareketi/backend-for-what
 Diğer bir sebep ise genel amaçlı API’nin ön uçta çalışan farklı tipteki uygulamaların ihtiyaçlarına karşılamakta yetersiz kalması. Mesela mobil uygulamalar daha az veri istiyor çünkü ekranlar web uygulamalarına göre küçük, ayrıca iletişim hızı daha yavaş olabiliyor, bant genişliği hassasiyeti var, istek frekansları farklı olabiliyor, ayrıca fonksiyonlar da farklı olabiliyor. Mesela webde ürünler listelenip ardından sipariş akışına girilirken, mobil tarafta önce barkod okutup ardından bu barkoda ait ürünün bulunup sipariş akışına girilmesi gibi bir fonksiyonel farklılık olabiliyor.
 Dolayısıyla SoundCloud bir taraftan yeni özellikler için veya bazı ana uygulamadaki bazı özellikleri aktarmak için mikroservisler geliştirip modern mimariyi deneyimlerken bir yandan da bu problemlere çözüm bulmaya çalışıyor. Hem fonksiyon hem de platform farklılığı temelinde özelleşmiş API’ler yazmışlar.
 
->SoundCloud’ı alacak olursak en başta tek bir monolitik uygulamaları varmış. Ardından 2013'te 20 civarında mikroservisleri olmuş. Sonra yavaş yavaş artmış ve şimdi 120 civarında mikroservisten bahsediyorlar.
+>SoundCloud’ı ele alacak olursak en başta tek bir monolitik uygulamaları varmış. Ardından 2013'te 20 civarında mikroservisleri olmuş. Sonra yavaş yavaş artmış ve şimdi 120 civarında mikroservisten bahsediyorlar.
 
 
 
