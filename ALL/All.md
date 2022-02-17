@@ -490,9 +490,9 @@ ORM Kullanmak her zaman avantajlı değildir. Karmaşık sorgular için ORM, SQL
 ### Peki neden ORM 
 ORM kullanmak bize zaman kazandırır. Veri modeli tek bir yere yazılır böylece kodu güncellemek, yeniden kullanmak daha kolaydır
 # 5. Domain Specific Language (DSL) kavramını açıklayınız. 
-Programlama dilleri kullanım alanlarına göre özel (Domain specific language )ve genel (General purpose language)olarak 2 ye ayrılır. Specifik bir uygulama geliştireceksek Domain specific diller kullanılır. Akla gelebilecek her türlü iş için özelleştirilmiş diller domain specific dillerdir. Örneğin web uygulamaları için css veritabanı işlermleri için SQL örnek olarak verilebilir. Genel amaçlı diller geniş kapsamlıdır ve birçok amaç için kullanılır. (Java, C, Python) 
+Programlama dilleri kullanım alanlarına göre özel (Domain specific language ) ve genel (General purpose language) olarak 2 ye ayrılır. Specifik bir uygulama geliştireceksek Domain specific diller kullanılır. Akla gelebilecek her türlü iş için özelleştirilmiş diller domain specific dillerdir. Örneğin web uygulamaları için css veritabanı işlermleri için SQL örnek olarak verilebilir. Genel amaçlı diller geniş kapsamlıdır ve birçok amaç için kullanılır. (Java, C, Python) 
 # 6. Long lived transaction kavramı hangi tip transactionları ifade etmektedir ? Dezavantajları var mıdır ? Varsa nelerdir ? 
-"Transaction", daha küçük parçalara ayrılamayan en küçük işlem yığınına denir. Belirli bir grup işlemin arka arkaya gerçekleşmesine rağmen, işlemlerin seri ya da toplu halde değerlendirilip hepsinin düzgün bir şekilde ele alınması gerektiğinde kullanılır. "Transaction", prensip olarak ya bütün işlemleri gerçekleştirir ya da hiçbirini gerçekleştirmez.  İşlemlerden biri dahi başarısız olursa, bu prensip nedeniyle hiçbir işlem olmamış kabul edilir; ancak tüm işlemler başarılı olduğunda" transaction", içinde gerçekleşen tüm veri değişikliklerini onaylamış demektir.
+"Transaction", daha küçük parçalara ayrılamayan en küçük işlem yığınına denir. Belirli bir grup işlemin arka arkaya gerçekleşmesine rağmen, işlemlerin seri ya da toplu halde değerlendirilip hepsinin düzgün bir şekilde ele alınması gerektiğinde kullanılır. "Transaction", prensip olarak ya bütün işlemleri gerçekleştirir ya da hiçbirini gerçekleştirmez.  İşlemlerden biri dahi başarısız olursa, bu prensip nedeniyle hiçbir işlem olmamış kabul edilir; ancak tüm işlemler başarılı olduğunda "transaction", içinde gerçekleşen tüm veri değişikliklerini onaylamış demektir.
 
 "Transaction" bloğundaki işlemlerin hepsi başarılı olduğunda "Transaction" Commit (Onaylama) komutu çalışır ve değişiklikler veritabanında gerçekleşmiş olur; ancak bir hata varsa işleyiş bozulur ve "transaction" Rollback (Geridönüş) komutu çalışır, bu şekilde tüm işlemler geri alınır ve en başa dönülür. Böylece veri kaybına karşı bir çeşit koruma mekanizması oluşturulmuş olunur.
 
@@ -563,7 +563,7 @@ A / B testi (bölme testi veya kova testi olarak da bilinir) hangisinin daha iyi
 Yazılımın iç yapısı incelenmeden sisteme yapılan giriş ve çıkış değerlerinin incelendiği bir test türüdür. Bu testin amaçları şöyle sıralanabilir.
 
 - Sistemin açılış ve kapanış esnasında karşılaşılacak problemlerin keşfi.
-- Yanlış ve ya eksik çalışan fonksiyonların keşfi.
+- Yanlış veya eksik çalışan fonksiyonların keşfi.
 - Ara yüz zafiyetlerinin keşfi.
 - Veri tabanına erişim kayıtlanma veya olası diğer zafiyetlerin keşfi.
 - Sistemin davranışsal hatalarının ve uygulama sorunlarının keşfi.
@@ -572,7 +572,7 @@ Yazılımın iç yapısı incelenmeden sisteme yapılan giriş ve çıkış değ
 
 Kod içindeki sorunları tespit etmek için yapılan testlere denir. Sistemin işleyişi ve kod bilgisi önemlidir. Çünkü testler bu bilgilere göre yapılır.
 Sistemdeki kodların uyumluluğunu ve doğruluğunu bu test sayesinde anlarız.
-Kodun optimizasyonunu sağlar. White box test neyi amaçlar
+Kodun optimizasyonunu sağlar. White box test neyi amaçlar?
 
 - Testteki her hangi bir potansiyel hata verecek kod yapısını tespiti.
 - İlerleyen süreçlerde çıkacak olan gizli hataların olmaması birim aşamada emin olmak.
@@ -625,11 +625,11 @@ Test Türlerinin iki yönünü birleştiren Çevik Test Çeyrekleri Brian Marick
 
 Çevik Test Çeyrekleri, ekiplerin ihtiyaç duyulan testi belirlemesine, planlamasına ve uygulamasına yardımcı olmak için yararlı bir sınıflandırma sağlar.
 
-Quadrant Q1 − Birim Düzeyi, Teknolojiye Yönelik ve geliştiricileri destekler. Birim testleri bu Çeyreğe aittir. Bu testler Otomatik testler olabilir.
+Quadrant Q1 − Birim Düzeyi, teknolojiye yönelik ve geliştiricileri destekler. Birim testleri bu Çeyreğe aittir. Bu testler Otomatik testler olabilir.
 
 Quadrant Q2 – Sistem düzeyi, işle ilgili ve uygun ürün davranışı. Fonksiyonel testler bu çeyreğe aittir. Bu testler manuel veya otomatiktir.
 
-Quadrant Q3 − Sistem veya Kullanıcı Kabul Düzeyi, İşe Yönelik ve gerçek zamanlı senaryolara odaklanma. Kullanıcı Kabul Testleri bu çeyreğe aittir. Bu testler manueldir.
+Quadrant Q3 − Sistem veya Kullanıcı Kabul Düzeyi, işe yönelik ve gerçek zamanlı senaryolara odaklanma. Kullanıcı Kabul Testleri bu çeyreğe aittir. Bu testler manueldir.
 
 Quadrant Q4 − Sistem veya Operasyonel Kabul Düzeyi, Teknolojiyle Karşılaşılan ve Performansa Odaklanma, Yük, Stres, Sürdürülebilirlik, Ölçeklenebilirlik Testleri. Otomasyon testleri ile birlikte bu testler için özel araçlar kullanılabilir.
 
@@ -695,7 +695,7 @@ Semaphore'da ise böyle bir kısıtlama yoktur hatta birçok durumda Semaphore'u
 ### Error
 Error handle edilemeyen hatalardır. Program akışının durmasına sebep olur. Uygulamanın yakalamaya çalışmaması gereken ciddi sorunları gösteren Throwable dan türeyen bir alt sınıftır.
 ### Exception
-Exceptio -ı ise try catch bloklarıyla yakalayabiliriz. Program akışı; exception eğer yakalandıysa devam eder. Exception yaşandığında; bunun program için arasıra yaşansa da sorun olmayacağı uygulamanın devam edebileceği anlaşılır. Exception ve Error; ikisi de Throwable sınıfından türer. Aşağıdaki görsel ile aralarındaki ilişkiyi daha net görebiliriz.
+Exceptio ise try catch bloklarıyla yakalayabiliriz. Program akışı; exception eğer yakalandıysa devam eder. Exception yaşandığında; bunun program için arasıra yaşansa da sorun olmayacağı uygulamanın devam edebileceği anlaşılır. Exception ve Error; ikisi de Throwable sınıfından türer. Aşağıdaki görsel ile aralarındaki ilişkiyi daha net görebiliriz.
 
 <p align="center">    <img src="https://www.fatalerrors.org/images/blog/7bba3f7352c8c8b15be1f90568857dce.jpg" /> </p>
 <p align="center">    <img src="https://i.stack.imgur.com/v2NAj.png" /> </p>
@@ -765,7 +765,7 @@ Unique(Benzersiz) bir kimliği olan nesneler entity olarak adlandırılır. Enti
 Bahsedilen kimlik ise bu nesnelerin her biri için yaratıldığı süreçten itibaren diğerlerinden ayırmamızı sağlayan ve değişmeden taşınan Id değeridir.
 Kendine ait bir kimliği olmayanlar ise value object olarak adlandırılır.
 Value object, herhangi bir kimlik(Id) değeri olmayan ve böylece aynı değerlere sahip iki value object nesnesinin değersel açıdan aynı olarak kabul edilebilir olmasını sağlayan 
-ve dolayısıyla birbirlerinin yerine geçebilecekleri anlamına gelen bir nesnedir. İşte bu nedenle value object’ler her daim değişmez(immutable)dirler
+ve dolayısıyla birbirlerinin yerine geçebilecekleri anlamına gelen bir nesnedir. İşte bu nedenle value object’ler her daim değişmezdirler. (immutable)
 
 # 8. Ubiquitous Language kavramını DDD kapsamında açıklayınız. Sizce neden önemli olabileceğini belirtiniz.
 Ubiquitous Language; domain expert ile developer arasındaki ortak dildir. Domain expert; hangi alanda yazılım yapılacaksa o alan ile ilgili bilgiye tecrübeye sahip kişidir. 
@@ -831,7 +831,7 @@ Windows Azure, Heroku, Google App Engine ...
 
 
 ### Infrastructure as a Service (IaaS)
-IaaS, bilgisayarlara, ağlara, depolama alanlarına ve diğer servislere erişmek ve bunları izlemek için tamamen self servistir. IaaS işletmelerin donanım satın almak yerine talep üzerine ve ihtiyaç duydukları kaynakları satın almalarını sağlar.
+IaaS; bilgisayarlara, ağlara, depolama alanlarına ve diğer servislere erişmek ve bunları izlemek için tamamen self servistir. IaaS işletmelerin donanım satın almak yerine talep üzerine ve ihtiyaç duydukları kaynakları satın almalarını sağlar.
 Microsoft Azure, Amazon Web Service, Google Cloud, IBM Cloud ...
 <p align="center">
   <img src="https://i1.wp.com/ipwithease.com/wp-content/uploads/2016/09/saas-vs-paas-vs-iaas.jpg?w=800&ssl=1" />
@@ -884,7 +884,7 @@ Api gateway ile güvenlik ile ilgili riskler azaltılır.
 
 ## 5. Backend for frontend (BFF) pattern’ ı açıklayınız.
 
-ilgili frontende özgü ihtiyaçlar doğrultusunda geliştirilmiş backend diyebiliriz. 
+İlgili frontende özgü ihtiyaçlar doğrultusunda geliştirilmiş backend diyebiliriz. 
 Yani farklı farklı frontendler için geliştirilmiş, o frontende özgü olarak, onun ihtiyaçlarını göz önüne alarak geliştirilmiş sunucu uygulamaları.
 
 Tek bir API varsa genel amaçlı API (general purpose API Gateway) oluyor, istemcilere göre veya fonksiyonlara göre özelleştirince, istemciye veya fonksiyonlara göre özelleştirilmiş API’ler (client-specific APIs veya BFFs) oluyor. Ben microservice in de microsu olarak tanımladım.
@@ -893,7 +893,7 @@ Burdan alıntıdır > [-->]https://medium.com/bilişim-hareketi/backend-for-what
 > Kavram SoundCloud tarafından ortaya atılmış. Yeni bir yaklaşım/mimari kalıp olmaktan çok yeni bir isimlendirme. Hikayesi şöyle. SoundCloud’un Ruby on Rails ile yazılmış monolitik bir uygulaması varmış. Bu uygulama içine gömülü bir katman olarak dışa açık bir API bulunuyormuş. Hem SoundCloud’un kendi geliştirdiği mobil/web uygulamalar, hem web uygulamalarında gömülü olarak çalışan küçük uygulamacıklar (web widgets), hem de 3. partiler aynı API’yi kullanıyormuş. Ön tarafta çalışan tüm uygulamaların ortak kullandığı genel amaçlı bir API. Burada karşılaşılan iki ana problem şöyle:
 İlk olarak mobil uygulamalar (front-end) bir değişik fonksiyonanlara ihtiyaç duyduğunda ortak API’de bu değişikliği yapmak zaman alıyormuş. Çünkü büyük bir uygulama, bir değişiklik herkes tarafından görülecek ve herkesi etkileyecek, ayrıca API’yi geliştiren ekip ile mobil ekip ayrı dolayısıyla bir iletişim yükünü taşımak zorunda kalıp, yavaş hareket etmek zorunda kalıyorlarmış. API ekibine istek iletilecek, planlama yapılacak, farklı ekiplerden gelen istekler arasında önceliklendirilecek, geliştirilecek, devreye alınacak. Hızlı hareket etmenin, denemeler yapmanın önünde bir engel, yeni özellik eklemek çok kolay değil, süreç uzun ve iletişim sürtünme katsayısı yüksek.
 Diğer bir sebep ise genel amaçlı API’nin ön uçta çalışan farklı tipteki uygulamaların ihtiyaçlarına karşılamakta yetersiz kalması. Mesela mobil uygulamalar daha az veri istiyor çünkü ekranlar web uygulamalarına göre küçük, ayrıca iletişim hızı daha yavaş olabiliyor, bant genişliği hassasiyeti var, istek frekansları farklı olabiliyor, ayrıca fonksiyonlar da farklı olabiliyor. Mesela webde ürünler listelenip ardından sipariş akışına girilirken, mobil tarafta önce barkod okutup ardından bu barkoda ait ürünün bulunup sipariş akışına girilmesi gibi bir fonksiyonel farklılık olabiliyor.
-Dolayısıyla SoundCloud bir taraftan yeni özellikler için veya bazı ana uygulamadaki bazı özellikleri aktarmak mikroservisler geliştirip modern mimariyi deneyimlerken bir yandan da bu problemlere çözüm bulmaya çalışmışlar. Hem fonksiyon hem de platform farklılığı temelinde özelleşmiş API’ler yazmışlar.
+Dolayısıyla SoundCloud bir taraftan yeni özellikler için veya bazı ana uygulamadaki bazı özellikleri aktarmak için mikroservisler geliştirip modern mimariyi deneyimlerken bir yandan da bu problemlere çözüm bulmaya çalışıyor. Hem fonksiyon hem de platform farklılığı temelinde özelleşmiş API’ler yazmışlar.
 
 >SoundCloud’ı alacak olursak en başta tek bir monolitik uygulamaları varmış. Ardından 2013'te 20 civarında mikroservisleri olmuş. Sonra yavaş yavaş artmış ve şimdi 120 civarında mikroservisten bahsediyorlar.
 
