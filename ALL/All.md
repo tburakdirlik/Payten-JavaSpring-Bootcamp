@@ -489,7 +489,7 @@ Via : https://www.veritabani.gen.tr/2017/01/30/veritabaninda-normalizasyon-kavra
 ORM Kullanmak her zaman avantajlı değildir. Karmaşık sorgular için ORM, SQL ile rekabet edemez. ORM kullanmak uygulama hızımızı azaltabilir. Kod üzerindeki hakimiyetimizi kısıtlayabilir bu nedenle her zaman kullanmamak gerek. Öğrenmesi zor deniliyor.
 ### Peki neden ORM 
 ORM kullanmak bize zaman kazandırır. Veri modeli tek bir yere yazılır böylece kodu güncellemek, yeniden kullanmak daha kolaydır
-5. Domain Specific Language (DSL) kavramını açıklayınız. 
+# 5. Domain Specific Language (DSL) kavramını açıklayınız. 
 Programlama dilleri kullanım alanlarına göre özel (Domain specific language )ve genel (General purpose language)olarak 2 ye ayrılır. Specifik bir uygulama geliştireceksek Domain specific diller kullanılır. Akla gelebilecek her türlü iş için özelleştirilmiş diller domain specific dillerdir. Örneğin web uygulamaları için css veritabanı işlermleri için SQL örnek olarak verilebilir. Genel amaçlı diller geniş kapsamlıdır ve birçok amaç için kullanılır. (Java, C, Python) 
 # 6. Long lived transaction kavramı hangi tip transactionları ifade etmektedir ? Dezavantajları var mıdır ? Varsa nelerdir ? 
 "Transaction", daha küçük parçalara ayrılamayan en küçük işlem yığınına denir. Belirli bir grup işlemin arka arkaya gerçekleşmesine rağmen, işlemlerin seri ya da toplu halde değerlendirilip hepsinin düzgün bir şekilde ele alınması gerektiğinde kullanılır. "Transaction", prensip olarak ya bütün işlemleri gerçekleştirir ya da hiçbirini gerçekleştirmez.  İşlemlerden biri dahi başarısız olursa, bu prensip nedeniyle hiçbir işlem olmamış kabul edilir; ancak tüm işlemler başarılı olduğunda" transaction", içinde gerçekleşen tüm veri değişikliklerini onaylamış demektir.
