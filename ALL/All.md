@@ -458,9 +458,9 @@ Tablonun düzenlenmiş hali
 |ID|Ad|Soyad|Telefon|
 |--|--|-----|-------|
 |1|Nurullah|Çakır|(123) 4567890|
-|1|Nurullah|Çakır|(123) 1234567|
-|1|Nurullah|Çakır|(123) 1231231|	
-|2|Hakan|Gürbaşlar|(123) 1111111|	
+|2|Nurullah|Çakır|(123) 1234567|
+|3|Nurullah|Çakır|(123) 1231231|	
+|4|Hakan|Gürbaşlar|(123) 1111111|	
 
 Telefon numaralarını tek bir kolona topladık kullanıcılara id atayarak farklı telefon numaralarının aynı kullanıcıya ait olmayacağını artık anlayabileceğiz.
 
